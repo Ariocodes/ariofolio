@@ -87,17 +87,42 @@
 body {
   overflow-x: hidden;
 }
-
 @media (max-width: 640px) {
+  body {
+    margin: 0;
+  }
+
+  .hero {
+    min-height: unset;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+  .prompt {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
   .hero-name {
     flex-direction: column;
-    align-items: center; /* center everything */
+    align-items: center;
     text-align: center;
     gap: 8px;
+
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 
   .hero-img {
     width: 200px;
     height: 200px;
+  }
+
+  .hero-role {
+    margin-bottom: 18px;
+  }
+
+  .hero-bio {
+    margin-bottom: 24px;
   }
 }
