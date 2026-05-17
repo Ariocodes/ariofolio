@@ -67,3 +67,16 @@
   gap: 16px;
   flex-wrap: wrap;
 }
+
+.hero-name {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.hero-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  flex-shrink: 0;
+}

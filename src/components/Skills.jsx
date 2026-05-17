@@ -1,4 +1,5 @@
 import './Skills.css'
+import { useState } from 'react'
 
 const skillGroups = [
   {
@@ -11,7 +12,7 @@ const skillGroups = [
   },
   {
     title: 'Networking',
-    items: ['CCNA Topics', 'Swithing & Routing', 'Configuration', 'Subnetting'],
+    items: ['CCNA Topics', 'Switching & Routing', 'Configuration', 'Subnetting'],
   },
   {
     title: 'Tools & Platforms',
@@ -28,6 +29,12 @@ const skillGroups = [
 ]
 
 function Skills() {
+  const [openIndex, setOpenIndex] = useState(null)
+
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index)
+  }
+
   return (
     <section id="skills">
       <div className="section-header">
@@ -37,15 +44,28 @@ function Skills() {
       </div>
 
       <div className="skills-grid">
-        {skillGroups.map((group) => (
+        {skillGroups.map((group, index) => (
           <div className="skill-group" key={group.title}>
-            <div className="skill-group-title">{group.title}</div>
-            {group.items.map((item) => (
-              <div className="skill-item" key={item}>
-                <div className="skill-dot" />
-                {item}
-              </div>
-            ))}
+
+            <div
+              className="skill-group-title clickable"
+              onClick={() => toggle(index)}
+            >
+              {group.title}
+              <span className="arrow">
+                {openIndex === index ? '−' : '+'}
+              </span>
+            </div>
+
+            <div className={`skill-items ${openIndex === index ? 'open' : ''}`}>
+              {group.items.map((item) => (
+                <div className="skill-item" key={item}>
+                  <div className="skill-dot" />
+                  {item}
+                </div>
+              ))}
+            </div>
+
           </div>
         ))}
       </div>

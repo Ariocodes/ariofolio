@@ -10,6 +10,7 @@
   padding: 28px;
 }
 
+/* TITLE */
 .skill-group-title {
   color: var(--green);
   font-size: 11px;
@@ -20,6 +21,7 @@
   border-bottom: 1px solid var(--border);
 }
 
+/* ITEM */
 .skill-item {
   display: flex;
   align-items: center;
@@ -27,10 +29,12 @@
   padding: 6px 0;
   color: var(--text);
   font-size: 12px;
-  transition: color 0.2s;
+  transition: color 0.2s, opacity 0.2s, transform 0.2s;
 }
 
-.skill-item:hover { color: #fff; }
+.skill-item:hover {
+  color: #fff;
+}
 
 .skill-dot {
   width: 5px;
@@ -41,4 +45,103 @@
   transition: background 0.2s;
 }
 
-.skill-item:hover .skill-dot { background: var(--green); }
+.skill-item:hover .skill-dot {
+  background: var(--green);
+}
+
+/* =========================
+   MOBILE (DEFAULT BEHAVIOR)
+   ========================= */
+
+.skill-items {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.skill-items.open {
+  max-height: 500px;
+}
+
+/* clickable header (mobile only interaction handled in JSX) */
+.clickable {
+  cursor: pointer;
+}
+
+/* title layout + arrow */
+.skill-group-title.clickable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.skill-group-title.clickable:hover {
+  color: var(--green);
+}
+
+.arrow {
+  color: var(--dim);
+  transition: transform 0.2s, color 0.2s;
+}
+
+.skill-group-title.active .arrow {
+  transform: rotate(180deg);
+  color: var(--green);
+}
+
+/* fade animation for items */
+.skill-items:not(.open) .skill-item {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+/* =========================
+   DESKTOP OVERRIDE (NO DROPDOWN)
+   ========================= */
+
+@media (min-width: 641px) {
+
+  .skill-items {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .skill-items.open {
+    max-height: none !important;
+  }
+
+  .skill-items:not(.open) .skill-item {
+    opacity: 1;
+    transform: none;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .clickable {
+    cursor: default;
+  }
+}
+
+@media (max-width: 640px) {
+  .skill-group {
+    padding: 16px;
+  }
+
+  .skill-group-title {
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+  }
+
+  .skill-item {
+    padding: 4px 0;
+    gap: 8px;
+    font-size: 11px;
+  }
+
+  .skills-grid {
+    gap: 0.5px;
+  }
+}

@@ -10,7 +10,15 @@ function Hero() {
       </div>
 
       <h1 className="hero-name fade-in">
-        Ario Bashiri<span className="cursor" />
+        <span className="hero-name-text">
+          Ario Bashiri<span className="cursor" />
+        </span>
+
+        <img
+          src="/icon.png"
+          alt="profile"
+          className="hero-img"
+        />
       </h1>
 
       <div className="hero-role fade-in">

@@ -1,4 +1,5 @@
 import './Navbar.css'
+import { FaGithub } from 'react-icons/fa'
 
 function Navbar() {
   return (
@@ -10,6 +11,7 @@ function Navbar() {
         <li><a href="#projects">projects</a></li>
         <li><a href="#skills">skills</a></li>
       </ul>
+      <div className="github-link"><a href="https://github.com/ariocodes" target="_blank" rel="noreferrer" className="github-link"><FaGithub/></a></div>
     </nav>
   )
 }

@@ -81,7 +81,7 @@ function Projects() {
             <div className="project-num">{p.num}</div>
             <div>
               <div className="project-name">{p.name}</div>
-              <div className="project-desc">{p.desc}</div>
+              <div className="project-desc hide-mobile">{p.desc}</div>
               <div className="project-tags">
                 {p.tags.map((t) => (
                   <span className={`tag ${t.cls}`} key={t.label}>{t.label}</span>

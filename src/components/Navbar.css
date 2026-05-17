@@ -23,8 +23,11 @@
   list-style: none;
   display: flex;
   gap: 32px;
-  /* width: fit-content;
-  margin: 0 auto; */
+  width: fit-content;
+  margin: 0 auto;
+  /* justify-content: center;
+  transform: translateX(-120px); */
+  /* margin-right: 100px; */
 }
 
 .navbar ul a {
@@ -42,4 +45,17 @@
 @media (max-width: 640px) {
   .navbar { padding: 14px 20px; }
   .navbar ul { gap: 16px; }
+}
+
+
+.github-link {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  color: var(--dim);
+  transition: color 0.2s;
+}
+
+.github-link:hover {
+  color: var(--green);
 }
