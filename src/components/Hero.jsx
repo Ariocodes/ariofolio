@@ -14,13 +14,12 @@ function Hero() {
       </h1>
 
       <div className="hero-role fade-in">
-        ESL Teacher <span>·</span> Computer Engineer <span>·</span> Builder
+        Computer Engineer <span>·</span> Developer <span>·</span> Teacher
       </div>
 
       <div className="hero-bio fade-in">
-        <span className="comment">// Java-focused, spanning backend to networking.</span><br />
-        Working on clean architecture, scalable systems,<br />
-        and tools that make a real difference.<br />
+        <span className="comment">// Full-Stack, IT Infrastructure.</span><br />
+        Started exploring IT at the age of 13. Never stopped. <br/>
         <span className="comment">// Teaching by day. Building by night.</span>
       </div>
 
