@@ -6,10 +6,6 @@ const skillGroups = [
     items: ['Java', 'Python', 'C#', 'C', 'SQL', 'JavaScript', 'PHP', 'HTML/CSS'],
   },
   {
-    title: 'Frontend',
-    items: ['HTML / CSS', 'React', 'JavaScript', 'Vite'],
-  },
-  {
     title: 'Framework & Libraries',
     items: ['React.js', 'JavaFX', 'JFrame', 'Numpy', 'matplotlib', 'Node-RED'],
   },
@@ -28,14 +24,6 @@ const skillGroups = [
   {
     title: 'Core Competencies',
     items: ['System Architecture', 'Algorithms', 'OOP', 'CCNA'],
-  },
-  {
-    title: '',
-    items: [],
-  },
-  {
-    title: '',
-    items: [],
   },
 ]
 
