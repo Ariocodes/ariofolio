@@ -1,0 +1,10 @@
+.footer {
+  padding: 40px 0;
+  color: var(--dim);
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.04em;
+}
+
+.footer-domain { color: var(--dim); }
