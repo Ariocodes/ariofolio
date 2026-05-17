@@ -126,3 +126,90 @@ body {
     margin-bottom: 24px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-role {
+  position: relative;
+  overflow: hidden;
+  width: 260px;
+  height: 24px;
+}
+
+/* fade edges */
+.hero-role::before,
+.hero-role::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-role::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg), transparent);
+}
+
+.hero-role::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg), transparent);
+}
+
+/* track */
+.role-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 4s linear infinite;
+}
+
+/* each group must NOT be affected by centering */
+.role-set {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  padding-right: 40px;
+}
+
+/* text */
+.role-set {
+  color: var(--green);
+  font-size: 14px;
+}
+
+/* dots */
+.dot {
+  color: var(--dim);
+}
+
+/* FIXED SEAMLESS ANIMATION (NOT 50%) */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-role {
+    margin: 0 auto;
+  }
+}

@@ -21,9 +21,22 @@ function Hero() {
         />
       </h1>
 
-      <div className="hero-role fade-in">
-        Computer Engineer <span>·</span> Developer <span>·</span> Teacher
+      <div className="hero-role">
+        <div className="role-track">
+          <div className="role-set">
+            Computer Engineer <span className="dot">·</span>
+            Developer <span className="dot">·</span>
+            Teacher <span className="dot">·</span>
+          </div>
+
+          <div className="role-set">
+            Computer Engineer <span className="dot">·</span>
+            Developer <span className="dot">·</span>
+            Teacher <span className="dot">·</span>
+          </div>
+        </div>
       </div>
+      
 
       <div className="hero-bio fade-in">
         <span className="comment">// Full-Stack, IT Infrastructure.</span><br />
