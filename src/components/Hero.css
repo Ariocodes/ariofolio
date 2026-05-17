@@ -71,12 +71,24 @@
 .hero-name {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 .hero-img {
   width: 200px;
   height: 200px;
-  object-fit: contain;
+  max-width: 100%;
   flex-shrink: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 640px) {
+  .hero-img {
+    width: 150px;
+    height: 150px;
+  }
 }

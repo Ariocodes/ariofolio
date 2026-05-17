@@ -64,6 +64,13 @@ const projects = [
     ],
     link: 'https://github.com/Ariocodes/ariofolio',
   },
+  {
+    num: '99',
+    name: 'And the list goes on...',
+    desc: 'Check out my other projects on GitHub. Click the arror on the right.',
+    tags: [],
+    link: 'https://github.com/Ariocodes/ariofolio',
+  },
 ]
 
 function Projects() {
