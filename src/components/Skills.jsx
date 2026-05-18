@@ -4,11 +4,15 @@ import { useState } from 'react'
 const skillGroups = [
   {
     title: 'Languages',
-    items: ['Java', 'Python', 'C#', 'C', 'SQL', 'JavaScript', 'PHP', 'HTML/CSS'],
+    items: ['Java', 'Python', 'C#', 'C', 'SQL', 'PHP', 'HTML/CSS/JavaScript'],
   },
   {
     title: 'Framework & Libraries',
     items: ['React.js', 'JavaFX', 'JFrame', 'Numpy', 'matplotlib', 'Node-RED'],
+  },
+  {
+    title: 'Soft Skills',
+    items: ['Teamwork', 'Time Management', 'Team Leadership', 'Team/Group Management', 'Agile Project Management', 'Effective Communication'],
   },
   {
     title: 'Networking',
@@ -17,10 +21,6 @@ const skillGroups = [
   {
     title: 'Tools & Platforms',
     items: ['Git / GitHub', 'Arch Linux', 'Postman', 'WordPress', 'Artificial Intelligence'],
-  },
-  {
-    title: 'Soft Skills',
-    items: ['Teamwork', 'Time Management', 'Team Leadership', 'Team/Group Management', 'Agile Project Management', 'Effective Communication'],
   },
   {
     title: 'Core Competencies',

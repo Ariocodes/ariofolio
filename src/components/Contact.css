@@ -1,3 +1,7 @@
+#contact{
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 .contact-headline {
   color: #fff;
   font-size: clamp(1.4rem, 3vw, 2rem);
@@ -16,11 +20,12 @@
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: var(--border);
   margin-top: 32px;
 }
+
 
 .contact-item {
   background: var(--bg);

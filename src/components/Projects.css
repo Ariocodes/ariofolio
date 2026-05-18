@@ -6,7 +6,7 @@
 
 .project-card {
   background: var(--bg);
-  padding: 28px 32px;
+  padding: 15px 32px;
   display: grid;
   grid-template-columns: 48px 1fr auto;
   gap: 24px;
@@ -30,7 +30,7 @@
   color: #fff;
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .project-desc {
@@ -45,6 +45,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-top: 10px;
 }
 
 .project-link {
@@ -69,4 +70,24 @@
   .hide-mobile {
     display: none;
   }
+}
+
+.project-card:hover .project-name {
+  margin-bottom: 8px;
+}
+
+/* collapsed by default */
+.project-expandable {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease;
+}
+
+/* expanded on hover */
+.project-card:hover .project-expandable {
+  max-height: 200px; /* tall enough for any card */
+  opacity: 1;
 }

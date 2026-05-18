@@ -14,10 +14,11 @@ function About() {
           <div className="about-block-title">// background</div>
           <p>
             Started coding at 13. Graduated <strong>3rd</strong> in High-School — <strong>medal</strong> from the Mathematics department — 
-            despite being an international student. Now a 3rd-year Computer Engineering 
+            despite being an international student. Currently a 3rd-year Computer Engineering 
             student at IUE, focusing on <strong>Full-Stack</strong> development and <strong>hardware</strong> architecture with a self-taught <strong>CCNA</strong> (Networking) background. 4 years of
-            <strong> teaching</strong> Codes, Mathematics, and English built the communication and teamwork skills. Sports built the discipline. <strong>AI 
-            tools</strong> speed up the process.
+            coding experience, paired with 4 years of
+            <strong> teaching</strong> Codes, Mathematics, and English — which built the 
+            communication and teamwork skills. <br/>Discipline comes from sport, speed comes from <strong>AI </strong>.
             <br /><br />
             Running <strong>Arch Linux</strong> + <strong>Windows 11</strong>
           </p>

@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: 80px;
+  width: 100%;
 }
 
 .prompt {
@@ -87,20 +88,29 @@
 body {
   overflow-x: hidden;
 }
+
+
+
+/* ------------------ MOBILE SETTINGS ------------------ */
 @media (max-width: 640px) {
   body {
     margin: 0;
   }
 
-  .hero {
+  /* .hero {
     min-height: unset;
     padding-top: 10px;
     padding-bottom: 40px;
-  }
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  } */
 
-  .prompt {
-    margin-top: 0;
-    margin-bottom: 16px;
+  .hero {
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
   }
 
   .hero-name {
@@ -108,7 +118,6 @@ body {
     align-items: center;
     text-align: center;
     gap: 8px;
-
     margin-top: 0;
     margin-bottom: 10px;
   }
@@ -124,19 +133,30 @@ body {
 
   .hero-bio {
     margin-bottom: 24px;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-links .btn {
+    width: 100%;
+    justify-content: center; 
+  }
+
+  .prompt {
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 16px;
+
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -208,8 +228,3 @@ body {
   }
 }
 
-@media (max-width: 640px) {
-  .hero-role {
-    margin: 0 auto;
-  }
-}

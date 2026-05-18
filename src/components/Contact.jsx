@@ -2,6 +2,7 @@ import './Contact.css'
 
 const links = [
   { icon: '@',  label: 'email',    val: 'ario@ariobashiri.com',             href: 'mailto:ario@ariobashiri.com' },
+  { icon: '📱', label: 'phone', val: '+90 551 747 27 17', href: 'tel:+905517472717' },
   { icon: '⌥', label: 'github',   val: 'github.com/Ariocodes',        href: 'https://github.com/Ariocodes' },
   { icon: 'in', label: 'linkedin', val: 'linkedin.com/in/ariobashiri', href: 'https://linkedin.com/in/' },
 ]
