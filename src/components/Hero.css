@@ -213,13 +213,3 @@ body {
     margin: 0 auto;
   }
 }
-
-.hero-role.fade-in {
-  opacity: 0;
-  animation: fadeIn 0.8s ease forwards;
-}
-
-/* ensure inner animation doesn't "beat" fade-in */
-.hero-role.fade-in .role-track {
-  animation-delay: 0.2s;
-}

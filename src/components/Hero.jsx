@@ -20,22 +20,24 @@ function Hero() {
           className="hero-img"
         />
       </h1>
+      <div className="fade-in">
+        <div className="hero-role">
+          <div className="role-track">
+            <div className="role-set">
+              Computer Engineer <span className="dot">·</span>
+              Developer <span className="dot">·</span>
+              Teacher <span className="dot">·</span>
+            </div>
 
-      <div className="hero-role">
-        <div className="role-track">
-          <div className="role-set">
-            Computer Engineer <span className="dot">·</span>
-            Developer <span className="dot">·</span>
-            Teacher <span className="dot">·</span>
-          </div>
-
-          <div className="role-set">
-            Computer Engineer <span className="dot">·</span>
-            Developer <span className="dot">·</span>
-            Teacher <span className="dot">·</span>
+            <div className="role-set">
+              Computer Engineer <span className="dot">·</span>
+              Developer <span className="dot">·</span>
+              Teacher <span className="dot">·</span>
+            </div>
           </div>
         </div>
       </div>
+      
       
 
       <div className="hero-bio fade-in">
