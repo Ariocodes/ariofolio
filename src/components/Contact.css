@@ -25,6 +25,11 @@
   background: var(--border);
   margin-top: 32px;
 }
+@media (max-width: 640px) {
+  .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 
 .contact-item {
