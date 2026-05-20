@@ -1,4 +1,4 @@
-# React + Vite
+# ariobashiri.com
 
 A terminal/dev-themed portfolio website showcasing my projects, skills, and background as a Computer Engineering student and teacher. 
 
