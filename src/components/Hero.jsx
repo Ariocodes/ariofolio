@@ -42,8 +42,7 @@ function Hero() {
 
       <div className="hero-bio fade-in">
         <span className="comment">// Full-Stack, IT Infrastructure.</span><br />
-        Started exploring IT at the age of 13. Never stopped. <br/>
-        <span className="comment">// Teaching by day. Building by night.</span>
+        Started exploring IT and coding at the age of 13. Never stopped. <br/>
       </div>
 
       <div className="hero-links fade-in">
