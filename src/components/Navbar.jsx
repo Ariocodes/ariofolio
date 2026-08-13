@@ -1,5 +1,7 @@
 import './Navbar.css'
 import { FaGithub } from 'react-icons/fa'
+import {FaInstagram} from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
 
 function Navbar() {
   return (
@@ -11,7 +13,9 @@ function Navbar() {
         <li><a href="#projects">projects</a></li>
         <li><a href="#skills">skills</a></li>
       </ul>
-      <div className="github-link"><a href="https://github.com/ariocodes" target="_blank" rel="noreferrer" className="github-link"><FaGithub/></a></div>
+      <div className="link"><a href="https://github.com/ariocodes" target="_blank" rel="noreferrer" className="link"><FaGithub/></a></div>
+      <div className="link"><a href="https://www.instagram.com/ariobashiri" target="_blank" rel="noreferrer" className="link"><FaInstagram/></a></div>
+      <div className="link"><a href="https://www.linkedin.com/in/ario-bashiri/" target="_blank" rel="noreferrer" className="link"><FaLinkedin/></a></div>
     </nav>
   )
 }

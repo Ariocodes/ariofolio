@@ -48,7 +48,8 @@
 }
 
 
-.github-link {
+.link {
+  padding: 5px;
   display: flex;
   align-items: center;
   font-size: 28px;
@@ -56,9 +57,10 @@
   transition: color 0.2s;
 }
 
-.github-link:hover {
+.link:hover {
   color: var(--green);
 }
+
 
 @media (max-width: 640px) {
 
