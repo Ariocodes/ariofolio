@@ -19,34 +19,12 @@
 
 .nav-logo span { color: var(--dim); }
 
-.navbar ul {
-  list-style: none;
+.nav-links {
   display: flex;
-  gap: 32px;
-  width: fit-content;
-  margin: 0 auto;
-  /* justify-content: center;
-  transform: translateX(-120px); */
-  /* margin-right: 100px; */
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
 }
-
-.navbar ul a {
-  color: var(--dim);
-  text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 0.05em;
-  transition: color 0.2s;
-}
-
-.navbar ul a::before { content: './'; color: var(--border); }
-.navbar ul a:hover::before { color: var(--green); }
-.navbar ul a:hover { color: var(--green); }
-
-@media (max-width: 640px) {
-  .navbar { padding: 14px 20px; }
-  .navbar ul { gap: 16px; }
-}
-
 
 .link {
   padding: 5px;
@@ -55,38 +33,15 @@
   font-size: 28px;
   color: var(--dim);
   transition: color 0.2s;
+  text-decoration: none;
 }
 
 .link:hover {
   color: var(--green);
 }
 
-
 @media (max-width: 640px) {
-
   .navbar {
-    position: fixed;
-  }
-
-  .navbar ul {
-    margin: 0;
-    gap: 18px;
-
-    overflow-x: auto;
-    white-space: nowrap;
-
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    mask-image: linear-gradient(
-      to right,
-      transparent,
-      black 10%,
-      black 90%,
-      transparent
-    );
-  }
-
-  .navbar ul::-webkit-scrollbar {
-    display: none;
+    padding: 14px 20px;
   }
 }

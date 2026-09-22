@@ -96,6 +96,20 @@
   transform: translateY(-4px);
 }
 
+.skill-icon {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: var(--dim);
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.skill-item:hover .skill-icon {
+  color: var(--green);
+}
+
+
 /* =========================
    DESKTOP OVERRIDE (NO DROPDOWN)
    ========================= */
