@@ -1,32 +1,62 @@
+
 .docs-grid {
   display: grid;
   gap: 1px;
-  background: var(--border);
+  background: transparent;
 }
 
 .doc-card {
-  background: var(--bg);
-  padding: 24px 32px;
   display: grid;
   grid-template-columns: 48px 1fr auto;
   gap: 24px;
   align-items: start;
+  padding: 24px 32px;
+  background: color-mix(in srgb, var(--bg) 50%, transparent);
+  border: 1px solid var(--border);
   text-decoration: none;
   transition: background 0.2s;
 }
 
-.doc-card:hover { background: var(--bg2); }
+.doc-card:hover {
+  background: color-mix(in srgb, var(--bg2) 20%, transparent);
+}
+
+/* NUMBER & ICON */
+
+.doc-num-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
 
 .doc-num {
   color: var(--border);
   font-size: 22px;
   font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
   padding-top: 2px;
   transition: color 0.2s;
-  font-family: 'JetBrains Mono', monospace;
 }
 
-.doc-card:hover .doc-num { color: var(--green); }
+.doc-icon,
+.doc-arrow {
+  color: var(--dim);
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.doc-arrow {
+  padding-top: 2px;
+}
+
+.doc-card:hover .doc-num,
+.doc-card:hover .doc-icon,
+.doc-card:hover .doc-arrow {
+  color: var(--green);
+}
+
+/* CONTENT */
 
 .doc-name {
   color: #fff;
@@ -49,14 +79,20 @@
   gap: 8px;
 }
 
-.doc-arrow {
-  color: var(--dim);
-  font-size: 18px;
-  padding-top: 2px;
-  transition: color 0.2s;
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
 }
 
-.doc-card:hover .doc-arrow { color: var(--green); }
+.tag-icon {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+/* MOBILE */
 
 @media (max-width: 640px) {
   .doc-card {
@@ -68,34 +104,4 @@
   .doc-desc {
     font-size: 11px;
   }
-}
-
-.doc-num-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
-.doc-icon {
-  color: var(--dim);
-  font-size: 18px;
-  transition: color 0.2s;
-}
-
-.doc-card:hover .doc-icon {
-  color: var(--green);
-}
-
-.tag {
-  display: inline-flex;
-  align-items: center;
-  font-size: 12px;
-  gap: 5px;
-}
-
-.tag-icon {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
 }

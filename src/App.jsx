@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <main>
         <Hero />
@@ -23,7 +23,7 @@ function App() {
         <Quote/>
         <Footer />
       </main>
-    </>
+    </div>
   )
 }
 

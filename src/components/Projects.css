@@ -1,20 +1,26 @@
+
 .projects-grid {
   display: grid;
   gap: 1px;
-  background: var(--border);
+  background: transparent;
 }
 
 .project-card {
-  background: var(--bg);
-  padding: 15px 32px;
   display: grid;
   grid-template-columns: 48px 1fr auto;
   gap: 24px;
   align-items: start;
+  padding: 15px 32px;
+  background: color-mix(in srgb, var(--bg) 50%, transparent);
+  border: 1px solid var(--border);
   transition: background 0.2s;
 }
 
-.project-card:hover { background: var(--bg2); }
+.project-card:hover {
+  background: color-mix(in srgb, var(--bg2) 20%, transparent);
+}
+
+/* NUMBER & LINK */
 
 .project-num {
   color: var(--border);
@@ -24,13 +30,29 @@
   transition: color 0.2s;
 }
 
-.project-card:hover .project-num { color: var(--green); }
+.project-link {
+  color: var(--dim);
+  font-size: 18px;
+  text-decoration: none;
+  padding-top: 2px;
+  transition: color 0.2s;
+}
+
+.project-card:hover .project-num,
+.project-link:hover {
+  color: var(--green);
+}
+
+/* CONTENT */
 
 .project-name {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
-  /* margin-bottom: 8px; */
+}
+
+.project-card:hover .project-name {
+  margin-bottom: 8px;
 }
 
 .project-desc {
@@ -48,35 +70,8 @@
   margin-top: 10px;
 }
 
-.project-link {
-  color: var(--dim);
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.2s;
-  padding-top: 2px;
-}
+/* EXPANDABLE CONTENT */
 
-.project-link:hover { color: var(--green); }
-
-@media (max-width: 640px) {
-  .project-card {
-    grid-template-columns: 32px 1fr auto;
-    gap: 12px;
-    padding: 20px;
-  }
-}
-
-@media (max-width: 640px) {
-  .hide-mobile {
-    display: none;
-  }
-}
-
-.project-card:hover .project-name {
-  margin-bottom: 8px;
-}
-
-/* collapsed by default */
 .project-expandable {
   max-height: 0;
   overflow: hidden;
@@ -86,21 +81,36 @@
     opacity 0.3s ease;
 }
 
-/* expanded on hover */
 .project-card:hover .project-expandable {
-  max-height: 200px; /* tall enough for any card */
+  max-height: 200px;
   opacity: 1;
 }
+
+/* TAGS */
 
 .tag {
   display: inline-flex;
   align-items: center;
-  font-size: 12px;
   gap: 5px;
+  font-size: 12px;
 }
 
 .tag-icon {
   display: flex;
   align-items: center;
   font-size: 18px;
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .project-card {
+    grid-template-columns: 32px 1fr auto;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
 }

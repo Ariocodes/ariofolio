@@ -1,49 +1,58 @@
-#contact{
-  padding-bottom: 80px;
-  padding-top: 80px;
+
+#contact {
+  padding: 80px 0;
 }
+
+/* HEADER */
+
 .contact-headline {
   color: #fff;
   font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 700;
   line-height: 1.3;
+  text-align: center;
 }
 
-.contact-headline .hl { color: var(--green); }
+.contact-headline .hl {
+  color: var(--green);
+}
 
 .contact-sub {
   color: var(--dim);
   font-size: 12px;
   margin-top: 12px;
   font-family: 'Fira Code', monospace;
+  text-align: center;
 }
+
+/* GRID */
 
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  background: var(--border);
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-@media (max-width: 640px) {
-  .contact-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  background: transparent;
+  margin: 40px 0 20px;
 }
 
+/* CONTACT ITEMS */
 
 .contact-item {
-  background: var(--bg);
-  padding: 24px 28px;
   display: flex;
   align-items: center;
   gap: 16px;
+  padding: 24px 28px;
+  background: color-mix(in srgb, var(--bg) 50%, transparent);
+  border: 1px solid var(--border);
   text-decoration: none;
   transition: background 0.2s;
 }
 
-.contact-item:hover { background: var(--bg2); }
+.contact-item:hover {
+  background: color-mix(in srgb, var(--bg2) 20%, transparent);
+}
+
+/* ICON & CONTENT */
 
 .contact-icon {
   color: var(--green);
@@ -67,4 +76,14 @@
   transition: color 0.2s;
 }
 
-.contact-item:hover .contact-val { color: var(--green); }
+.contact-item:hover .contact-val {
+  color: var(--green);
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

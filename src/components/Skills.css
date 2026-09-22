@@ -2,11 +2,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1px;
-  background: var(--border);
+  background: transparent;
 }
 
 .skill-group {
-  background: var(--bg);
+  background: color-mix(in srgb, var(--bg) 50%, transparent);
+  border: 1px solid var(--border);
   padding: 8px;
 }
 
