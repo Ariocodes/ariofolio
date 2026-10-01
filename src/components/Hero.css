@@ -1,103 +1,121 @@
 .hero {
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 30px;
-  width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+    width: 100%;
 }
 
 .prompt {
-  color: var(--dim);
-  font-size: 12px;
-  margin-bottom: 32px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    color: var(--dim);
+    font-size: 12px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.prompt-path { color: var(--blue); }
-.prompt-symbol { color: var(--green); }
+.prompt-path {
+    color: var(--blue);
+}
+
+.prompt-symbol {
+    color: var(--green);
+}
 
 
 
 .cursor {
-  display: inline-block;
-  width: 3px;
-  height: 0.85em;
-  background: var(--green);
-  margin-left: 4px;
-  vertical-align: middle;
-  animation: blink 1s step-end infinite;
+    display: inline-block;
+    width: 3px;
+    height: 0.85em;
+    background: var(--green);
+    margin-left: 4px;
+    vertical-align: middle;
+    animation: blink 1s step-end infinite;
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 .hero-role {
-  color: var(--green);
-  font-size: 14px;
-  margin-bottom: 28px;
-  letter-spacing: 0.02em;
+    color: var(--green);
+    font-size: 14px;
+    margin-bottom: 28px;
+    letter-spacing: 0.02em;
 }
 
-.hero-role span { color: var(--dim); margin: 0 8px; }
+.hero-role span {
+    color: var(--dim);
+    margin: 0 8px;
+}
 
 .hero-bio {
-  color: var(--dim);
-  max-width: 540px;
-  font-size: 13px;
-  line-height: 1.9;
-  margin-bottom: 40px;
-  font-family: 'Fira Code', monospace;
+    color: var(--dim);
+    max-width: 540px;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    font-family: 'Fira Code', monospace;
 }
 
-.comment { color: #3a5a3a; }
+.comment {
+    color: #3a5a3a;
+}
 
 .hero-links {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 .hero-name {
-  font-size: clamp(2.4rem, 6vw, 4rem);
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  margin-bottom: 16px;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    justify-content: center;
+    margin-bottom: 16px;
 
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
 .hero-img {
-  width: 200px;
-  height: 200px;
-  max-width: 100%;
-  flex-shrink: 0;
-  object-fit: cover;
-  border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 
 
 /* ------------------ MOBILE SETTINGS ------------------ */
 @media (max-width: 640px) {
-  body {
-    margin: 0;
-  }
+    body {
+        margin: 0;
+    }
 
-  /* .hero {
+    /* .hero {
     min-height: unset;
     padding-top: 10px;
     padding-bottom: 40px;
@@ -107,65 +125,65 @@ body {
     padding-right: 0;
   } */
 
-  .hero {
-  align-items: center;
-  padding-left: 0;
-  padding-right: 0;
-  }
+    .hero {
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-  .hero-name {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
+    .hero-name {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
 
-  .hero-img {
-    width: 200px;
-    height: 200px;
-  }
+    .hero-img {
+        width: 200px;
+        height: 200px;
+    }
 
-  .hero-role {
-    margin-bottom: 18px;
-  }
+    .hero-role {
+        margin-bottom: 18px;
+    }
 
-  .hero-bio {
-    margin-bottom: 24px;
-    text-align: center;
-    max-width: 100%;
-    width: 100%;
-  }
+    .hero-bio {
+        margin-bottom: 24px;
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+    }
 
-  .hero-links {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+    .hero-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
-  .hero-links .btn {
-    width: 100%;
-    justify-content: center; 
-  }
+    .hero-links .btn {
+        width: 100%;
+        justify-content: center;
+    }
 
-  .prompt {
-    justify-content: center;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 16px;
+    .prompt {
+        justify-content: center;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 16px;
 
-  }
+    }
 }
 
 
 
 
 .hero-role {
-  position: relative;
-  overflow: hidden;
-  width: 260px;
-  height: 24px;
+    position: relative;
+    overflow: hidden;
+    width: 260px;
+    height: 24px;
 }
 
 /* fade edges */
@@ -192,39 +210,39 @@ body {
 
 /* track */
 .role-track {
-  display: flex;
-  width: max-content;
-  animation: scroll 4s linear infinite;
+    display: flex;
+    width: max-content;
+    animation: scroll 4s linear infinite;
 }
 
 /* each group must NOT be affected by centering */
 .role-set {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  gap: 10px;
-  white-space: nowrap;
-  padding-right: 40px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    padding-right: 40px;
 }
 
 /* text */
 .role-set {
-  color: var(--green);
-  font-size: 14px;
+    color: var(--green);
+    font-size: 14px;
 }
 
 /* dots */
 .dot {
-  color: var(--dim);
+    color: var(--dim);
 }
 
 /* FIXED SEAMLESS ANIMATION (NOT 50%) */
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+    0% {
+        transform: translateX(0);
+    }
 
+    100% {
+        transform: translateX(-50%);
+    }
+}
